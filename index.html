@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>u i i a i i u i i a i i</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            width: 100vw;
+        }
+
+        img {
+            height: 20vw;
+            padding: 10vw;
+            animation: uiia 4s linear infinite;
+        }
+
+        div,
+        img,
+        marquee {
+            overflow: visible;
+        }
+
+        @-webkit-keyframes uiia {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes uiia {
+            100% {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @keyframes uiia {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script>
+        const addRinaldo = () => {
+            let container = document.getElementById("uiia")
+            let img = document.createElement("img")
+            img.src = "huh.png"
+
+            container.appendChild(img)
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            addRinaldo()
+        })
+    </script>
+</head>
+
+<body>
+    <div>
+        <marquee scrollamount="50" id="uiia">
+        </marquee>
+    </div>
+</body>
+
+</html>
